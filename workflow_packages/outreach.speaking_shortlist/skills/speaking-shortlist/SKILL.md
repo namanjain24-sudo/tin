@@ -43,18 +43,9 @@ applies, submits, emails, or otherwise acts toward any venue on its own.
    audience — rather than a generic pitch. Never fabricate speaking history, credentials,
    metrics or availability.
 
-7. Before writing anything, count N, the number of venues that survived step 3. Decide the
-   verdict word from N alone — this is arithmetic, not a judgment call: `fit` if N is 3 or more,
-   `thin` if N is 1 or 2, `not a fit` if N is 0. Hold onto N and the word for step 8.
-
-8. Write the report to the declared path, in exactly this order and nothing else in between —
-   no summary sentence, no venue count, no explanation before, between or after these two lines:
-   - `Status:` `complete` if N is 1 or more, otherwise `no venues verified`
-   - `Verdict:` followed by nothing but the word or phrase decided in step 7 (`fit`, `thin`, or
-     `not a fit`) — never left out, never any other text on that line
-
-   Then one section per venue, in ranked order, each with these exact labels so the result stays
-   checkable:
+7. Write the report to the declared path. Start with one line, `Status: complete` if at least
+   one venue survived verification, otherwise `Status: no venues verified`. Then one section per
+   venue, in ranked order, each with these exact labels so the result stays checkable:
    - `## <Venue name>` with its link
    - `Deadline:` the exact date (and timezone if stated) and its source, or
      `Rolling — verified open on <date checked>` with its source for a rolling venue
@@ -65,9 +56,3 @@ applies, submits, emails, or otherwise acts toward any venue on its own.
    End with `## Excluded candidates`: anything found but dropped, and why. If fewer than
    `max_venues` survived verification, say so plainly in that section — do not pad the list to
    hit the number.
-
-9. Before finishing, reread the draft you just wrote. Count the `## <Venue name>` headings
-   actually present (excluding `## Excluded candidates`) and confirm that count matches N from
-   step 7, and that the `Verdict:` line is present with exactly one of its three words and
-   nothing else. If either is off, fix the `Verdict:` line to match what you actually wrote
-   before finishing — do not leave a mismatch or a missing line in the final report.
